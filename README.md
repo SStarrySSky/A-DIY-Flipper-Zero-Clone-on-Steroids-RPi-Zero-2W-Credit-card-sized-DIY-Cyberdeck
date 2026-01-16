@@ -36,6 +36,12 @@ ________________________________________________________________________________
 严禁用于任何非法目的！
 使用者需自行承担法律责任。
 ```
+🚀 Performance Overkill
+Feature	Flipper Zero	PwnZero Ultra (RPi Zero 2W)
+CPU	64MHz Single-core	1GHz Quad-core (15x Faster)
+OS	Basic RTOS	Full Kali Linux (Debian-based)
+Radio	Single CC1101	Dual CC1101 (Full-Duplex / RollJam)
+Storage	Limited	Up to 1TB via MicroSD (Extreme A2 Support)
 
 ---
 
