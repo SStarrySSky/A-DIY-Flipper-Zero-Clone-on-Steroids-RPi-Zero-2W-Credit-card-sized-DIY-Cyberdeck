@@ -13,6 +13,7 @@ ________________________________________________________________________________
    [ PwnZero Ultra: The Linux-Powered Toolkit ]                               
    [ Far more powerful than Flipper Zero — A True Portable Cyberdeck ]        
 ________________________________________________________________________________
+```
 
 > **Repository Description:**
 > PwnZero Ultra: A DIY Flipper Zero Clone on Steroids. 
@@ -27,7 +28,6 @@ ________________________________________________________________________________
 
 ## 免责声明
 
-```
 本项目仅供以下用途：
 - CTF 竞赛 / 黑客马拉松比赛
 - 授权的安全研究与渗透测试
