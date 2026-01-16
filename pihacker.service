@@ -1,0 +1,16 @@
+[Unit]
+Description=PiHacker Application
+After=multi-user.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/pihacker
+ExecStart=/usr/bin/python3 /home/pi/pihacker/main.py
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
