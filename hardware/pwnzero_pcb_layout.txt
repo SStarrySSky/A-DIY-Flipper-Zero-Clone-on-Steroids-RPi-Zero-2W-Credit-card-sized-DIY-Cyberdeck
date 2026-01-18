@@ -1,0 +1,268 @@
+# PwnZero PCB Layout Coordinates
+# Board Size: 85.6mm x 53.98mm (Credit Card Size)
+# Units: millimeters
+# Origin: Bottom-left corner (0, 0)
+
+## Board Outline
+BOARD_LENGTH = 85.6
+BOARD_WIDTH = 53.98
+BOARD_THICKNESS = 1.6
+CORNER_RADIUS = 3.0
+
+## Top Layer Components
+
+### OLED Display (SH1106)
+OLED:
+  Position: (15.0, 8.0)
+  Size: 35.4 x 33.5 mm
+  Rotation: 0°
+  Layer: Top
+  Pins:
+    - VCC: (15.0, 8.0)
+    - GND: (17.54, 8.0)
+    - SCL: (20.08, 8.0)
+    - SDA: (22.62, 8.0)
+
+### 5-Way Joystick
+JOYSTICK:
+  Position: (25.0, 32.0)
+  Size: 30.2 x 26.0 mm
+  Rotation: 0°
+  Layer: Top
+  Mounting_Holes:
+    - Hole1: (25.0, 32.0) - 3mm diameter
+    - Hole2: (45.2, 32.0) - 3mm diameter
+    - Hole3: (25.0, 52.0) - 3mm diameter
+    - Hole4: (45.2, 52.0) - 3mm diameter
+  Pins:
+    - UP: (30.0, 37.0)
+    - DOWN: (30.0, 47.0)
+    - LEFT: (25.0, 42.0)
+    - RIGHT: (35.0, 42.0)
+    - CENTER: (30.0, 42.0)
+    - COM: (32.54, 42.0)
+
+### Status LEDs (Top Layer - Right Side)
+LED_RED:
+  Position: (78.0, 5.0)
+  Size: 5.0mm diameter
+  Rotation: 0°
+  Layer: Top
+  Pins:
+    - Anode: (78.0, 5.0)
+    - Cathode: (78.0, 2.5)
+
+LED_YELLOW:
+  Position: (78.0, 13.0)
+  Size: 5.0mm diameter
+  Rotation: 0°
+  Layer: Top
+  Pins:
+    - Anode: (78.0, 13.0)
+    - Cathode: (78.0, 10.5)
+
+LED_GREEN:
+  Position: (78.0, 21.0)
+  Size: 5.0mm diameter
+  Rotation: 0°
+  Layer: Top
+  Pins:
+    - Anode: (78.0, 21.0)
+    - Cathode: (78.0, 18.5)
+
+## Bottom Layer Components
+
+### CC1101 TX Module
+CC1101_TX:
+  Position: (5.0, 8.0)
+  Size: 12.2 x 20.8 mm
+  Rotation: 0°
+  Layer: Bottom
+  Pins:
+    - VCC: (5.0, 8.0)
+    - GND: (7.54, 8.0)
+    - MOSI: (10.08, 8.0)
+    - MISO: (12.62, 8.0)
+    - SCK: (15.16, 8.0)
+    - CSN: (17.7, 8.0)
+    - GDO0: (20.24, 8.0)
+    - GDO2: (22.78, 8.0)
+
+### CC1101 RX Module
+CC1101_RX:
+  Position: (5.0, 35.0)
+  Size: 12.2 x 20.8 mm
+  Rotation: 0°
+  Layer: Bottom
+  Pins:
+    - VCC: (5.0, 35.0)
+    - GND: (7.54, 35.0)
+    - MOSI: (10.08, 35.0)
+    - MISO: (12.62, 35.0)
+    - SCK: (15.16, 35.0)
+    - CSN: (17.7, 35.0)
+    - GDO0: (20.24, 35.0)
+    - GDO2: (22.78, 35.0)
+
+### PN532 NFC Module
+PN532:
+  Position: (25.0, 12.0)
+  Size: 40.4 x 42.7 mm
+  Rotation: 0°
+  Layer: Bottom
+  Pins:
+    - VCC: (25.0, 12.0)
+    - GND: (27.54, 12.0)
+    - SDA: (30.08, 12.0)
+    - SCL: (32.62, 12.0)
+  DIP_Switch:
+    - SEL0: ON (I2C mode)
+    - SEL1: OFF (I2C mode)
+
+### IR Receiver (VS1838B)
+IR_RX:
+  Position: (78.0, 8.0)
+  Size: 7.6 x 6.7 mm
+  Rotation: 0°
+  Layer: Bottom
+  Pins:
+    - OUT: (78.0, 8.0)
+    - GND: (78.0, 10.54)
+    - VCC: (78.0, 13.08)
+
+### IR Transmitter LED
+IR_TX:
+  Position: (78.0, 35.0)
+  Size: 5.0mm diameter
+  Rotation: 0°
+  Layer: Bottom
+  Pins:
+    - Anode: (78.0, 35.0)
+    - Cathode: (78.0, 32.5)
+
+## SMD Components (Bottom Layer)
+
+### Resistors (0805 Package)
+R1_330R:
+  Position: (75.0, 35.0)
+  Size: 2.0 x 1.25 mm
+  Rotation: 90°
+  Layer: Bottom
+  Purpose: IR LED current limiting
+
+R2_330R:
+  Position: (75.0, 5.0)
+  Size: 2.0 x 1.25 mm
+  Rotation: 90°
+  Layer: Bottom
+  Purpose: Red LED current limiting
+
+R3_330R:
+  Position: (75.0, 13.0)
+  Size: 2.0 x 1.25 mm
+  Rotation: 90°
+  Layer: Bottom
+  Purpose: Yellow LED current limiting
+
+R4_330R:
+  Position: (75.0, 21.0)
+  Size: 2.0 x 1.25 mm
+  Rotation: 90°
+  Layer: Bottom
+  Purpose: Green LED current limiting
+
+### Capacitors (0805 Package)
+C1_10uF:
+  Position: (5.0, 5.0)
+  Size: 2.0 x 1.25 mm
+  Rotation: 0°
+  Layer: Bottom
+  Purpose: CC1101 TX power filter
+
+C2_100nF:
+  Position: (8.0, 5.0)
+  Size: 2.0 x 1.25 mm
+  Rotation: 0°
+  Layer: Bottom
+  Purpose: CC1101 TX high-freq filter
+
+C3_10uF:
+  Position: (5.0, 32.0)
+  Size: 2.0 x 1.25 mm
+  Rotation: 0°
+  Layer: Bottom
+  Purpose: CC1101 RX power filter
+
+C4_100nF:
+  Position: (8.0, 32.0)
+  Size: 2.0 x 1.25 mm
+  Rotation: 0°
+  Layer: Bottom
+  Purpose: CC1101 RX high-freq filter
+
+## 40-Pin Header Connector (Bottom Layer)
+GPIO_HEADER:
+  Position: (20.0, 48.0)
+  Size: 50.8 x 5.08 mm (2x20 pins, 2.54mm pitch)
+  Rotation: 0°
+  Layer: Bottom
+  Pin_Spacing: 2.54mm
+  Description: Connects to Raspberry Pi Zero 2W GPIO header
+  
+  Pin_Mapping:
+    Row1 (Odd pins 1-39):
+      Pin1_3V3: (20.0, 48.0)
+      Pin3_GPIO2_SDA: (25.08, 48.0)
+      Pin5_GPIO3_SCL: (30.16, 48.0)
+      Pin7_GPIO4: (35.24, 48.0)
+      Pin9_GND: (40.32, 48.0)
+      Pin11_GPIO17: (45.4, 48.0)
+      Pin13_GPIO27: (50.48, 48.0)
+      Pin15_GPIO22: (55.56, 48.0)
+      Pin17_3V3: (60.64, 48.0)
+      Pin19_GPIO10_MOSI: (65.72, 48.0)
+    
+    Row2 (Even pins 2-40):
+      Pin2_5V: (20.0, 50.54)
+      Pin4_5V: (25.08, 50.54)
+      Pin6_GND: (30.16, 50.54)
+      Pin8_GPIO14: (35.24, 50.54)
+      Pin10_GPIO15: (40.32, 50.54)
+      Pin12_GPIO18: (45.4, 50.54)
+      Pin14_GND: (50.48, 50.54)
+      Pin16_GPIO23: (55.56, 50.54)
+      Pin18_GPIO24: (60.64, 50.54)
+      Pin20_GND: (65.72, 50.54)
+
+## Trace Width Specifications
+TRACE_WIDTHS:
+  Power_3V3: 0.5mm
+  Power_5V: 0.6mm
+  Power_GND: Pour copper (flood fill)
+  Signal_SPI: 0.3mm
+  Signal_I2C: 0.3mm
+  Signal_GPIO: 0.25mm
+
+## Via Specifications
+VIA_SPECS:
+  Diameter: 0.8mm
+  Drill: 0.4mm
+  Pad: 1.2mm
+
+## Manufacturing Notes
+MANUFACTURING:
+  Board_Material: FR-4
+  Surface_Finish: HASL Lead-Free
+  Solder_Mask: Black (recommended)
+  Silkscreen: White
+  Min_Hole_Size: 0.3mm
+  Min_Track_Width: 0.2mm
+  Min_Clearance: 0.2mm
+
+## Assembly Notes
+ASSEMBLY:
+  1. Solder SMD components first (resistors, capacitors)
+  2. Solder through-hole components (LEDs, IR receiver)
+  3. Solder module connectors (CC1101, PN532, OLED)
+  4. Solder 40-pin header last
+  5. Test continuity before connecting Pi Zero 2W

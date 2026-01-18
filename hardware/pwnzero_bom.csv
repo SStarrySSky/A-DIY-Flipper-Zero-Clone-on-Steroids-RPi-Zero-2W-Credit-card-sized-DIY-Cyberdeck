@@ -1,0 +1,20 @@
+Comment,Designator,Footprint,LCSC Part Number,Manufacturer,Manufacturer Part,Quantity,Value
+"Main Controller - 1GHz Quad-core ARM Cortex-A53",U1,RPi_Zero_2W,,Raspberry Pi Foundation,Raspberry Pi Zero 2W,1,Raspberry_Pi_Zero_2W
+"Sub-GHz Transceiver TX - 433/315MHz",U2,CC1101_Module,,Texas Instruments,CC1101,1,CC1101_TX
+"Sub-GHz Transceiver RX - 433/315MHz",U3,CC1101_Module,,Texas Instruments,CC1101,1,CC1101_RX
+"NFC/RFID Module - 13.56MHz I2C Address: 0x24",U4,PN532_Module,C84849,NXP,PN532,1,PN532
+"OLED Display 1.3 inch 128x64 I2C Address: 0x3C",U5,OLED_128x64,C88334,,SH1106 1.3inch OLED,1,SH1106
+"IR Receiver 38kHz",U6,TO-92,C10677,Vishay,VS1838B,1,VS1838B
+"5-Way Navigation Switch",SW1,Joystick_5Way,C318884,,5-Way Tactile Switch,1,5Way_Joystick
+"IR LED 940nm for IR transmission",D1,LED_D5.0mm,C72041,Everlight,IR333C,1,IR_LED_940nm
+"Status LED Red",D2,LED_D5.0mm,C84256,Hubei KENTO,C5-R,1,LED_Red
+"Status LED Yellow",D3,LED_D5.0mm,C84259,Hubei KENTO,C5-Y,1,LED_Yellow
+"Status LED Green",D4,LED_D5.0mm,C84257,Hubei KENTO,C5-G,1,LED_Green
+"Current limiting resistor for IR LED",R1,R_0805,C17630,UNI-ROYAL,0805W8F3300T5E,1,330
+"Current limiting resistor for LED Red",R2,R_0805,C17630,UNI-ROYAL,0805W8F3300T5E,1,330
+"Current limiting resistor for LED Yellow",R3,R_0805,C17630,UNI-ROYAL,0805W8F3300T5E,1,330
+"Current limiting resistor for LED Green",R4,R_0805,C17630,UNI-ROYAL,0805W8F3300T5E,1,330
+"Power filter capacitor for CC1101 TX",C1,C_0805,C15850,Samsung,CL21A106KAYNNNE,1,10uF
+"High-freq filter capacitor for CC1101 TX",C2,C_0805,C49678,YAGEO,CC0805KRX7R9BB104,1,100nF
+"Power filter capacitor for CC1101 RX",C3,C_0805,C15850,Samsung,CL21A106KAYNNNE,1,10uF
+"High-freq filter capacitor for CC1101 RX",C4,C_0805,C49678,YAGEO,CC0805KRX7R9BB104,1,100nF

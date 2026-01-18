@@ -44,6 +44,22 @@ usb_height = 6;
 // 天线孔
 antenna_diameter = 6;
 
+// PCB 尺寸
+pcb_length = 85.6;
+pcb_width = 53.98;
+pcb_thickness = 1.6;
+pcb_clearance = 1;  // PCB与外壳的间隙
+
+// 安装柱参数
+mount_post_diameter = 4;
+mount_post_height = 8;
+mount_screw_diameter = 2.5;
+
+// 卡扣参数
+clip_width = 3;
+clip_height = 2;
+clip_depth = 1;
+
 // ============================================
 // 圆角立方体模块
 // ============================================
