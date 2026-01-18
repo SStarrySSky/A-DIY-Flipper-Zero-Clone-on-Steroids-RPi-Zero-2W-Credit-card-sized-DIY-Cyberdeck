@@ -30,31 +30,3 @@ class WiFiModule:
         except:
             print("WiFi: aircrack-ng not installed")
             return False
-
-    def scan_networks(self):
-        """扫描 WiFi 网络"""
-        if SIMULATION_MODE:
-            return [
-                {'ssid': 'TestNetwork', 'bssid': 'AA:BB:CC:DD:EE:FF', 'channel': 6, 'power': -50},
-                {'ssid': 'HomeWiFi', 'bssid': '11:22:33:44:55:66', 'channel': 11, 'power': -60},
-            ]
-
-        try:
-            result = subprocess.run(
-                ['iwlist', self.interface, 'scan'],
-                capture_output=True, text=True, timeout=10
-            )
-            return self._parse_scan(result.stdout)
-        except Exception as e:
-            print(f"Scan error: {e}")
-            return []
-
-    def _parse_scan(self, output):
-        """解析扫描结果"""
-        networks = []
-        # 简化解析逻辑
-        return networks
-
-    def close(self):
-        """清理资源"""
-        pass

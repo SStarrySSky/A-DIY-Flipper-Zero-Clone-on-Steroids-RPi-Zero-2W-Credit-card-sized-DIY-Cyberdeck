@@ -6,6 +6,14 @@ Uses pigpio for precise timing control.
 import time
 from config import IR, SIMULATION_MODE
 
+# 常见遥控器码库 (NEC 协议)
+IR_DATABASE = {
+    'samsung_tv_power': [9000, 4500, 560, 560, 560, 1690, 560, 560, 560, 1690, 560, 1690, 560, 1690, 560, 560],
+    'lg_tv_power': [9000, 4500, 560, 560, 560, 1690, 560, 1690, 560, 560, 560, 1690, 560, 560, 560, 1690],
+    'sony_tv_power': [2400, 600, 1200, 600, 600, 600, 1200, 600, 600, 600, 1200, 600, 600],
+    'generic_power': [9000, 4500, 560, 560, 560, 560, 560, 560, 560, 560, 560, 1690, 560, 1690, 560, 1690],
+}
+
 
 class IRModule:
     """红外收发模块"""
@@ -119,6 +127,16 @@ class IRModule:
     def send_power_off(self):
         """发送通用电源关闭信号"""
         return self.send_nec(0x00, 0x0C)
+
+    def send_preset(self, preset_name):
+        """发送预设遥控器信号"""
+        if preset_name not in IR_DATABASE:
+            return False
+        return self.send_signal(IR_DATABASE[preset_name])
+
+    def list_presets(self):
+        """列出所有预设"""
+        return list(IR_DATABASE.keys())
 
     def close(self):
         """清理资源"""

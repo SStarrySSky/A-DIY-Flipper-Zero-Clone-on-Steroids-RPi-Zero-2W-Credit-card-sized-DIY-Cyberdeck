@@ -27,11 +27,11 @@ PLATFORM = platform.system()
 
 # 5-Way Navigation Switch (Active Low - Pull-up required)
 class Buttons:
-    UP = 5
-    DOWN = 6
-    LEFT = 13
-    RIGHT = 19
-    CENTER = 26  # Enter/Select
+    UP = 17
+    DOWN = 27
+    LEFT = 22
+    RIGHT = 23
+    CENTER = 24  # Enter/Select
 
     ALL = [UP, DOWN, LEFT, RIGHT, CENTER]
     NAMES = {UP: 'UP', DOWN: 'DOWN', LEFT: 'LEFT', RIGHT: 'RIGHT', CENTER: 'CENTER'}
@@ -68,8 +68,8 @@ class NFC:
 
 # Infrared
 class IR:
-    TX_PIN = 17
-    RX_PIN = 27
+    TX_PIN = 5
+    RX_PIN = 6
     CARRIER_FREQ = 38000  # 38kHz carrier frequency
 
 # Status LEDs

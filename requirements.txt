@@ -1,0 +1,16 @@
+# PiHacker Requirements
+# Install: pip install -r requirements.txt
+
+# Display
+luma.oled>=3.8.1
+luma.core>=2.4.0
+Pillow>=9.0.0
+
+# GPIO and Hardware
+RPi.GPIO>=0.7.1
+spidev>=3.5
+smbus2>=0.4.2
+pigpio>=1.78
+
+# System
+psutil>=5.9.0

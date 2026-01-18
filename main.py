@@ -228,8 +228,17 @@ class PiHacker:
             time.sleep(2)
 
         elif item == "Emulate Card":
-            self.display.draw_message("NFC", "Not supported")
-            time.sleep(1)
+            self.led.start_chase(speed=0.1)
+            self.display.draw_message("NFC", "Emulating...")
+            result = self.nfc.emulate_card()
+            self.led.stop_chase()
+            if result.get('success'):
+                self.led.success()
+                self.display.draw_message("NFC", f"Emulated:{result['uid'][:8]}")
+            else:
+                self.led.error()
+                self.display.draw_message("NFC", "Failed")
+            time.sleep(2)
 
     def _handle_ir(self, item):
         """Handle IR menu actions."""

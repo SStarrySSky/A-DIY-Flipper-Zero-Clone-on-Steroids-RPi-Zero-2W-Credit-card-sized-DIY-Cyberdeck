@@ -5,16 +5,12 @@
 // 参数设置
 // ============================================
 
-// 外壳尺寸 (信用卡尺寸)
-case_length = 85.6;
-case_width = 53.98;
+// 外壳尺寸
+case_length = 80;
+case_width = 55;
 case_height = 25;
 wall_thickness = 2;
 corner_radius = 3;
-
-// 曲面面板参数
-panel_thickness = 2;  // 亚克力/滴胶厚度
-panel_curve_radius = 150;  // 曲面半径 (越大越平)
 
 // Pi Zero 尺寸
 pi_length = 65;
@@ -43,22 +39,6 @@ usb_height = 6;
 
 // 天线孔
 antenna_diameter = 6;
-
-// PCB 尺寸
-pcb_length = 85.6;
-pcb_width = 53.98;
-pcb_thickness = 1.6;
-pcb_clearance = 1;  // PCB与外壳的间隙
-
-// 安装柱参数
-mount_post_diameter = 4;
-mount_post_height = 8;
-mount_screw_diameter = 2.5;
-
-// 卡扣参数
-clip_width = 3;
-clip_height = 2;
-clip_depth = 1;
 
 // ============================================
 // 圆角立方体模块
