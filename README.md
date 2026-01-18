@@ -1,11 +1,24 @@
-#   DIY 多功能便携黑客工具（安全研究设备）
-_____                      ______               
- |  __ \                    |___  /               
- | |__) |_      ___ __   ____  / /  ___ _ __ ___  
- |  ___/\ \ /\ / / '_ \ |_  / / /  / _ \ '__/ _ \ 
- | |     \ V  V /| | | | / / / /__|  __/ | | (_) |
- |_|      \_/\_/ |_| |_|/___/_____/\___|_|  \___/ 
-                                                  
+#   DIY 多功能便携黑客工具
+```text
+
+________________________________________________________________________________
+                                                                              
+    _____                      ______                                         
+   |  __ \                    |___  /                                         
+   | |__) |_      ___ __   ____  / /  ___ _ __ ___                            
+   |  ___/\ \ /\ / / '_ \ |_  / / /  / _ \ '__/ _ \                           
+   | |     \ V  V /| | | | / / / /__|  __/ | | (_) |                          
+   |_|      \_/\_/ |_| |_|/___/_____/\___|_|  \___/                           
+                                                                              
+   [ PwnZero Ultra: The Linux-Powered Toolkit ]                               
+   [ Far more powerful than Flipper Zero — A True Portable Cyberdeck ]        
+________________________________________________________________________________
+```
+
+> **Repository Description:**
+> PwnZero Ultra: A DIY Flipper Zero Clone on Steroids. 
+> A credit-card-sized, quad-core hacking powerhouse that redefines 
+> portable hardware auditing. Built for pros who need more than a toy.
  [ Portable Linux-Based Hacking Multi-Tool ]
  [ Powered by RPi Zero 2W | Dual CC1101 | PN532 ]
 
@@ -15,7 +28,6 @@ _____                      ______
 
 ## 免责声明
 
-```
 本项目仅供以下用途：
 - CTF 竞赛 / 黑客马拉松比赛
 - 授权的安全研究与渗透测试
@@ -23,7 +35,15 @@ _____                      ______
 
 严禁用于任何非法目的！
 使用者需自行承担法律责任。
-```
+
+### 🚀 Performance Overkill
+
+| Feature | Flipper Zero | **PwnZero Ultra (RPi Zero 2W)** |
+| :--- | :--- | :--- |
+| **CPU** | 64MHz Single-core | **1GHz Quad-core (15x Faster)** |
+| **OS** | Basic RTOS | **Full Kali Linux (Debian-based)** |
+| **Radio** | Single CC1101 | **Dual CC1101 (Full-Duplex / RollJam)** |
+| **Storage** | Limited | **Up to 1TB via MicroSD (Extreme A2 Support)** |
 
 ---
 
