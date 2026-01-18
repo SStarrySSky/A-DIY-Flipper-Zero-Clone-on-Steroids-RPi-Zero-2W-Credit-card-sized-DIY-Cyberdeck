@@ -5,12 +5,16 @@
 // 参数设置
 // ============================================
 
-// 外壳尺寸
-case_length = 80;
-case_width = 55;
+// 外壳尺寸 (信用卡尺寸)
+case_length = 85.6;
+case_width = 53.98;
 case_height = 25;
 wall_thickness = 2;
 corner_radius = 3;
+
+// 曲面面板参数
+panel_thickness = 2;  // 亚克力/滴胶厚度
+panel_curve_radius = 150;  // 曲面半径 (越大越平)
 
 // Pi Zero 尺寸
 pi_length = 65;

@@ -107,3 +107,24 @@ class NFCModule:
     def close(self):
         """清理资源"""
         pass
+
+    def emulate_card(self, uid=None):
+        """模拟 NFC 卡片"""
+        if not uid:
+            uid = self.last_uid if self.last_uid else "04112233"
+
+        if SIMULATION_MODE:
+            print(f"Simulation: Emulating UID {uid}")
+            return True
+
+        try:
+            # 使用 nfc-emulate-uid 模拟卡片
+            result = subprocess.run(
+                ['nfc-emulate-uid', uid],
+                timeout=30,
+                capture_output=True
+            )
+            return result.returncode == 0
+        except Exception as e:
+            print(f"Emulate error: {e}")
+            return False

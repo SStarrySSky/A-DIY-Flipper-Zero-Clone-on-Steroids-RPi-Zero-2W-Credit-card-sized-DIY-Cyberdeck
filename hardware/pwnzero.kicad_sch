@@ -1,0 +1,19 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid 5bc9f7a1-9c83-41bb-b9d6-7d8b8c8e8f8a)
+
+  (paper "A4")
+
+  (title_block
+    (title "PwnZero - Flipper Zero Clone")
+    (date "2026-01-18")
+    (rev "1.0")
+    (company "DIY Hacker Project")
+  )
+
+  (lib_symbols
+    ;; Raspberry Pi Zero 2W
+    (symbol "RPi_Zero_2W" (pin_names (offset 1.016))
+      (in_bom yes) (on_board yes)
+      (property "Reference" "U" (id 0) (at 0 0 0))
+      (property "Value" "RPi_Zero_2W" (id 1) (at 0 -2.54 0))

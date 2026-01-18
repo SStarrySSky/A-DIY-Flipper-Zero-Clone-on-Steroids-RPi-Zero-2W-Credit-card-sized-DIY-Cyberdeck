@@ -63,9 +63,13 @@ Why settle for a toy when you can carry a workstation? PwnZero isn't just a clon
 | 信号重放 | 重放录制的信号 |
 | RollJam 演示 | 滚动码攻击演示 (仅限授权测试) |
 | NFC 读卡 | 读取卡片 UID/ATQA/SAK |
+| **NFC 模拟** | **模拟 NFC 卡片 (新增)** |
 | IR 学习 | 学习红外遥控信号 |
 | IR 发送 | 发送学习的红外信号 |
+| **IR 码库** | **内置常见遥控器码库 (新增)** |
+| **WiFi 扫描** | **扫描 WiFi 网络 (新增)** |
 | 电量显示 | 实时显示电池电量 |
+| **LED 状态** | **三色 LED 轮流闪烁 (新增)** |
 
 ---
 
